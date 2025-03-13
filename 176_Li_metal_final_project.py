@@ -51,7 +51,7 @@ print(df.head())
 # 8. Save the cleaned DataFrame
 #output_path = r"CALiSol-23 Dataset(cleaned).csv"
 df.to_csv("CALiSol-23 Dataset(cleaned).csv", index=False)
-print(f"Cleaned dataset saved to {output_path}")
+print(f"Cleaned dataset saved to {'CALiSol-23 Dataset(cleaned)'}")
 
 # For train/test split and model
 from sklearn.model_selection import train_test_split
@@ -176,6 +176,7 @@ plt.show()
 
 
 # In[ ]:
+
 
 
 
