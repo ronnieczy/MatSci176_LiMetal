@@ -9,8 +9,8 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder
 
 # 1. Load the dataset
-file_path = r"C:\Users\fernn\Dropbox\untitled folder\Stanford courses\CHEMENG_177\CALiSol-23 Dataset.csv"
-df = pd.read_csv(file_path)
+#file_path = r"C:\Users\fernn\Dropbox\untitled folder\Stanford courses\CHEMENG_177\CALiSol-23 Dataset.csv"
+df = pd.read_csv("CALiSol-23 Dataset.csv")
 
 
 # 2. Remove duplicate rows, if any
@@ -49,8 +49,8 @@ print(df.head())
 
 
 # 8. Save the cleaned DataFrame
-output_path = r"C:\Users\fernn\Dropbox\untitled folder\Stanford courses\CHEMENG_177\CALiSol-23 Dataset(cleaned).csv"
-df.to_csv(output_path, index=False)
+#output_path = r"CALiSol-23 Dataset(cleaned).csv"
+df.to_csv("CALiSol-23 Dataset(cleaned).csv", index=False)
 print(f"Cleaned dataset saved to {output_path}")
 
 # For train/test split and model
@@ -59,8 +59,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
 # 1. Load cleaned dataset
-file_path = r"C:\Users\fernn\Dropbox\untitled folder\Stanford courses\CHEMENG_177\CALiSol-23 Dataset(cleaned).csv"
-df = pd.read_csv(file_path)
+#file_path = r"C:\Users\fernn\Dropbox\untitled folder\Stanford courses\CHEMENG_177\CALiSol-23 Dataset(cleaned).csv"
+df = pd.read_csv('CALiSol-23 Dataset(cleaned).csv')
 
 
 # 2. Define features (X) and target (y)
